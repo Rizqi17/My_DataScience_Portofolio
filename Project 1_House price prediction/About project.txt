@@ -1,7 +1,7 @@
-# Deskripsi project
+# Project description
   This project aims to predict house prices using a machine learning model, looking at the influence of each variable on       house prices.
 
-# Model machine learning
+# Machine learning model
   In this project, 4 machine learning models are used, namely
     1. Ridge regression
     Ridge Regression, also known as L2 Regularization, is a regression technique used to prevent overfitting by adding a         penalty to the magnitude of the regression coefficients.
