@@ -1,5 +1,23 @@
 # Deskripsi project
+  This project aims to predict house prices using a machine learning model, looking at the influence of each variable on       house prices.
 
 # Model machine learning
+  In this project, 4 machine learning models are used, namely
+    1. Ridge regression
+    Ridge Regression, also known as L2 Regularization, is a regression technique used to prevent overfitting by adding a         penalty to the magnitude of the regression coefficients.
 
-# Hasil dan simpulan
+    2. Lasso regression
+    Lasso Regression, or L1 Regularization, is a regression technique similar to Ridge Regression but uses an L1 penalty for     regularization.
+
+    3. XGBoost regression
+    XGBoost (eXtreme Gradient Boosting) is a highly efficient and optimized implementation of the gradient boosting              algorithm used for various regression and classification tasks.
+
+    4. LightGBM regression
+    LightGBM (Light Gradient Boosting Machine) is a gradient boosting framework optimized for high efficiency and                scalability.
+
+# Conclusion
+    1. The Ridge, Lasso, XGBoost, and LightGBM models all have very similar performance in terms of R² and RMSE. All models      have almost the same R².
+
+    2. Although the R² values ​​are similar, the Lasso model has a slightly lower RMSE than the other models. This shows that      the Lasso model has a slightly smaller average prediction error rate.
+
+    3. The Lasso model is the best choice based on performance evaluation using R² and RMSE metrics on available test data.
