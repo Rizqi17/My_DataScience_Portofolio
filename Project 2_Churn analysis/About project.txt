@@ -1,5 +1,43 @@
 # Project description
+  This project aims to analyze customer data from a store, find insights, and build a machine learning algorithm to            determine whether a customer will churn or not. This project was carried out twice, namely without imbalance data handling   and with imbalance data handling, the aim was to see the effect of the imbalance data handling process.
+
 
 # Machine learning model
+  The machine learning model built in this project is
+    1. Logistic regression
+    Logistic regression is an algorithm for binary classification. Although the name contains the word "regression", it is       actually used to predict the probability of the target class. This model uses a logistic function (sigmoid) to map the       prediction output to a range between 0 and 1.
+
+    2. Random forest
+    Random Forest is an ensemble learning method that combines many decision trees to increase accuracy and reduce               overfitting. Each decision tree in the forest is created using a random subset of the training data and a random subset      of the features.
+
+    3. Decision trees
+    Decision Tree is an algorithm that breaks data into subsets based on selected features, thus forming a tree-like             structure with nodes representing tests on certain features and branches representing the results of these tests. The        leaves of the tree represent the final decision or prediction
+
 
 # Conclusion
+  In the process of handling data imbalance, I use the oversampling (SMOTE) method, where classes with less data will be       increased until the number is the same as the class with more data.
+
+  The result is that the imbalance data that was handled previously is better than the imbalance data that was not handled.    can be seen in the Accuracy value without handling imbalance data, namely,
+    1. Logistic Regression = 74.42
+    2. Random Forest = 79.32
+    3. Decision Tree = 73.62
+
+  while for Accuracy results by handling imbalance data,
+    1. Logistic Regression = 77.72
+    2. Random Forest = 85.49
+    3. Decision Tree = 80.00
+
+  So, the best results are those after handling the imbalance data. This could happen because
+    1. There is no bias towards the majority class, on balanced data the model will learn equally for each class.
+    2. No overfitting occurs, on balanced data the model will avoid overfitting.
+
+  From the ROC AUC results it can also be seen that the model results after handling the imbalance data are better than        before handling the imbalance data, here are the results
+  before handling imbalance data
+    1. Logistic Regression = 84.34
+    2. Random Forest = 82.46
+    3. Decision Tree = 66.68
+
+  Meanwhile, the results after handling imbalance data
+    1. Logistic Regression = 85.88
+    2. Random Forest = 93.22
+    3. Decision Tree = 80.08
