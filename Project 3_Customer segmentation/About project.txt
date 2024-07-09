@@ -1,5 +1,11 @@
 # Project description
+This project aims to analyze customer data from a mall and cluster it into several segmentations and find insights into each mall customer segmentation.
 
 # Machine learning model
+The machine learning model used in this project is
+1. KMeans clustering
+K-Means is an unsupervised learning algorithm used to divide a dataset into a number of clusters
+𝑘 which has been determined. Each cluster consists of data points that have similar characteristics to each other.
 
-# Conclution
+2. Hierarchical clustering
+Hierarchical Clustering is an unsupervised learning algorithm that builds a hierarchy of clusters. There are two main approaches: Agglomerative (bottom-up) and Divisional (top-down).
